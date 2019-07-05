@@ -1,7 +1,7 @@
 # MyCPP_Practical-Training
 ## 一些介绍
 1. 这是我的首个C++实训项目   
-2. 本游戏基于easyX图形库,需要安装文件包内的EasyX_2018春分版才可运行
+2. 本游戏基于**easyX**图形库,需要安装文件包内的**EasyX_2018春分版**才可运行
 3. 特别鸣谢以下师兄对我的技术支持帮助
    1. [sola](https://github.com/unlimitedsola)
    2. [Clovin](https://github.com/Clovin)
