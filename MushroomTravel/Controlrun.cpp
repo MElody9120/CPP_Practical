@@ -288,7 +288,7 @@ void control::gameStart()
 							drawtext("帮助", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 							break;
 						case 3:
-							drawtext("Exit", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+							drawtext("退出", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 							break;
 						}
 					}
@@ -307,16 +307,16 @@ void control::gameStart()
 							switch (i)
 							{
 							case 0:
-								drawtext("Start", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+								drawtext("开始", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 								break;
 							case 1:
-								drawtext("Abstract", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+								drawtext("介绍", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 								break;
 							case 2:
-								drawtext("Help", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+								drawtext("帮助", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 								break;
 							case 3:
-								drawtext("Exit", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+								drawtext("退出", &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 								break;
 							}
 						}
@@ -333,7 +333,7 @@ void control::gameStart()
 void control::showScore(int score)
 {
 	settextstyle(0, 0, "宋体");
-	char s1[20] = "SCORE:  ";
+	char s1[20] = "分数:  ";
 	char s2[5];
 	itoa(score, s2, 10);//配合 outtextxy 的函数原型 即只接受字符型
 	strcat(s1, s2);
@@ -345,19 +345,19 @@ void control::showScore(int score)
 void control::showLevel(int level)
 {
 	settextstyle(0, 0, "宋体");
-	char s1[20] = "LEVEL:  ";
+	char s1[20] = "关卡:  ";
 	char s2[2];
 	itoa(level, s2, 10);//配合 outtextxy 的函数原型 即只接受字符型
 	strcat(s1, s2);
 	setbkmode(TRANSPARENT);
-	outtextxy(XSIZE - 90, 10, s1);
+	outtextxy(XSIZE - 100, 10, s1);
 	setbkmode(OPAQUE);
 }
 
 void control::showDied(int life)
 {
 	cleardevice();
-	char s1[20] = "Life just have:  ";
+	char s1[20] = "你的生命还有:  ";
 	char s2[2];
 	itoa(life, s2, 10);//配合 outtextxy 的函数原型 即只接受字符型
 	outtextxy(XSIZE / 2 - 63, YSIZE / 3, s1);
@@ -376,7 +376,7 @@ void control::showGameOver()
 void control::showPassed(int world)
 {
 	cleardevice();
-	char s1[20] = "LEVEL:  ";
+	char s1[20] = "关卡:  ";
 	char s2[2];
 	itoa(world, s2, 10);//配合 outtextxy 的函数原型 即只接受字符型
 	outtextxy(XSIZE / 2 - 20, YSIZE / 3, s1);
