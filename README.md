@@ -1,4 +1,4 @@
-# MyCPP_Practical-Training
+# CPP_Practical
 ## 一些介绍
 1. 这是我的首个C++实训项目   
 2. 本游戏基于**easyX**图形库,需要安装文件包内的**EasyX_2018春分版**才可运行
@@ -6,6 +6,7 @@
    1. [sola](https://github.com/unlimitedsola)
    2. [Clovin](https://github.com/Clovin)
    3. [hangxingliu](https://github.com/hangxingliu)
+   
 ---
 一些运行要求:  
 VC6 默认使用的 MBCS 编码，而 VC2008 及高版本 VC 默认使用的 Unicode 编码。以下详细解释这个问题：  
